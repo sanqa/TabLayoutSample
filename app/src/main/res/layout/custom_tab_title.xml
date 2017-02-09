@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal" android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:gravity="center"
-              android:id="@+id/titletab">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="8dp">
 
-    <ImageView
-        android:id="@+id/tabimage"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_margin="2dp"
-        />
+
+
+    <balyas.sasha.tablayoutsample.ui.TintableImageView
+        android:id="@+id/custom_tab_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"/>
 
     <TextView
-        android:id="@+id/tabtext"
+        android:id="@+id/custom_tab_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:paddingBottom="15dp"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"/>
+        android:layout_margin="2dp"
+        android:maxLines="1"
+        android:textColor="#00F"
+        android:textSize="14sp"
+        />
 
 </LinearLayout>
